@@ -37,13 +37,13 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                     //--IMAGEN QUE SE MUESTRA--//
                     pic_estado.Image = Properties.Resources.help_question;
                     //--COLOR DE LOS BOTONES (RGB)--//
-                    color(255, 255, 0, 255, 255, 0);
+                    color_pic("a","a");
                     //--TIPO DE CURSOR EN LOS CAMPOS--//
                     break;
 
                 case "1.1.3 Asignacion ...":
                     //--COLORES DE LOS BOTONES--//
-                    color(255, 0, 0, 0, 255, 0);
+                    color_pic("v","r");
                     //--ESTADO DE LOS CAMPOS--//
                     txt_estados(true,true,true,true,true,false);
                     //--RUTAS DE LOS TEXTOS--//
@@ -62,7 +62,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
 
                 case "1.1.5 Pago ...":
                     //--COLOR DE LOS BOTONES--//
-                    color(255, 0, 0, 0, 255, 0);
+                    color_pic("v", "r");
                     //--ESTADO DE LOS CAMPOS--//
                     txt_estados(true, true, true, true, true, false);
                     //--RUTAS DE LOS ARCHIVOSS--//
@@ -82,7 +82,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                 case "1.1.6 Conformación ...":
 
                     //--COLOR DE LOS BOTONES--//
-                    color(255, 0, 0, 0, 255, 0);
+                    color_pic("v", "r");
                     //--ESTADO DE LOS CAMPOS--//
                     txt_estados(true, true, true, true, true, false);
                     //--RUTAS DE LOS ARCHIVOSS--//
@@ -101,7 +101,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                 case "1.1.7 Capacitación ...":
 
                     //--COLOR DE LOS BOTONES--//
-                    color(255, 0, 0, 0, 255, 0);
+                    color_pic("v", "r");
                     //--ESTADO DE LOS CAMPOS--//
                     txt_estados(true, true, true, true, true, false);
                     //--RUTAS DE LOS ARCHIVOSS--//
@@ -120,7 +120,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                 case "1.1.8 Conformación ...":
 
                     //--COLOR DE LOS BOTONES--//
-                    color(255, 0, 0, 0, 255, 0);
+                    color_pic("v", "r");
                     //--ESTADO DE LOS CAMPOS--//
                     txt_estados(true, true, true, true, true, false);
                     //--RUTAS DE LOS ARCHIVOSS--//
@@ -138,45 +138,17 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             }
         }
         //--MOSTRAR LOS SOPORTES DEL ITEM--//
-        private void btn_soport_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
-            String ruta;
-            switch (cmb_itemest.SelectedItem)
-            {
-                case "1.1.3 Asignacion ...":
-                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Soportes";
-                    clase.soportes(ruta);
-                    break;
-                case "1.1.5 Pago ...":
-                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Soportes";
-                    clase.soportes(ruta);
-                    break;
-                case "1.1.6 Conformación ...":
-                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.6Conformacion\Soportes";
-                    clase.soportes(ruta);
-                    break;
-                case "1.1.7 Capacitación ...":
-                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.7Capacitacion\Soportes";
-                    clase.soportes(ruta);
-                    break;
-                case "1.1.8 Conformación ...":
-                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.8Conformacion\Soportes";
-                    clase.soportes(ruta);
-                    break;
-
-                default:
-                    MessageBox.Show("Any Document","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    break;
-            }
+            soportes();
         }
         //--EDITAR LOS CAMPOS--//
-        private void btn_editar_Click(object sender, EventArgs e)
+        private void pic_editar_Click(object sender, EventArgs e)
         {
             Editar();
         }
         //--GUARDAR LOS CAMBIOS--//
-        private void btn_guardar_Click(object sender, EventArgs e)
+        private void pic_guardar_Click(object sender, EventArgs e)
         {
             Guardar();
         }
@@ -184,7 +156,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
         private void pic_estado_Click(object sender, EventArgs e)
         {
             String ruta;
-            if (btn_editar.Enabled == false)
+            if (pic_editar.Enabled == false)
             {
                 switch (cmb_itemest.SelectedItem)
                 {
@@ -229,8 +201,8 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_desc.Enabled = desc;
             txt_marco.Enabled = marco;
             txt_observa.Enabled = observa;
-            btn_editar.Enabled = editar;
-            btn_guardar.Enabled = guardar;
+            pic_editar.Enabled = editar;
+            pic_guardar.Enabled = guardar;
         }
         //--MOSTRAR CAMPOS--//
         void mostrar_txt() {
@@ -259,10 +231,10 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
         //--EDITAR--//
         void Editar() {
             //--ESTADO DE LOS BOTONES EDITAR Y GUARDAR--//
-            btn_editar.Enabled = false;
-            btn_guardar.Enabled = true;
+            pic_editar.Enabled = false;
+            pic_guardar.Enabled = true;
             //--COLOR DE LOS BOTONES EDITAR Y GUARDAR--//
-            color(255,0,0,0,255,0);
+            color_pic("r", "v");
             //--ESTADO (EDITABLE O NO) DE LOS CAMPOS DE TEXTO--//
             txt_avance.ReadOnly = false;
             txt_desc.ReadOnly = false;
@@ -281,10 +253,10 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
         //--GUARDAR--//
         void Guardar() {
             //--ESTADO DE LOS BOTONES EDITAR Y GUARDAR--//
-            btn_editar.Enabled = true;
-            btn_guardar.Enabled = false;
+            pic_editar.Enabled = true;
+            pic_guardar.Enabled = false;
             //--COLOR DE LOS BOTONES EDITAR Y GUARDAR--//
-            color(255,0,0,0,255,0);
+            color_pic("v", "r");
             //--ESTADO (EDITABLE O NO) DE LOS CAMPOS DE TEXTO--//
             estado_lectura(true,true,true,true,true,true);
             //--TIPO DE CURSOR DE LOS CAMPOS--//
@@ -435,19 +407,65 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             }
         }
         //--COLOR DE LOS BOTONES--//
-        public void color(int R1, int G1, int B1, int R2, int G2, int B2) {
+        public void color_pic(String editar,String guardar) {
+            
+            switch (editar) {
+                case"r":
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar_r.png");
+                    break;
+                case "v":
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar_v.png");
+                    break;
+                default:
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar.png");
+                    break;
+            }
+            switch (guardar) {
+                case"r":
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar_r.png");
+                    break;
+                case "v":
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar_v.png");
+                    break;
+                default:
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar.png");
+                    break;
+            }
+            
 
-            btn_guardar.BackColor = Color.FromArgb(R1, G1, B1);
-            btn_editar.BackColor = Color.FromArgb(R2, G2, B2);
         }
-        //--INGRESAR DATOS EN LOS LABELS--//
-        private void lbl_nombre_Click(object sender, EventArgs e)
-        {
-            Interaction.InputBox("Ingrese el nuevo nombre","Nombre","",2,2);
+        //--SOPORTES--//
+        public void soportes() {
+            String ruta;
+            switch (cmb_itemest.SelectedItem)
+            {
+                case "1.1.3 Asignacion ...":
+                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Soportes";
+                    clase.soportes(ruta);
+                    break;
+                case "1.1.5 Pago ...":
+                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Soportes";
+                    clase.soportes(ruta);
+                    break;
+                case "1.1.6 Conformación ...":
+                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.6Conformacion\Soportes";
+                    clase.soportes(ruta);
+                    break;
+                case "1.1.7 Capacitación ...":
+                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.7Capacitacion\Soportes";
+                    clase.soportes(ruta);
+                    break;
+                case "1.1.8 Conformación ...":
+                    ruta = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.8Conformacion\Soportes";
+                    clase.soportes(ruta);
+                    break;
+
+                default:
+                    MessageBox.Show("Any Document", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
         }
-        private void lbl_fecha2_Click(object sender, EventArgs e)
-        {
-            Interaction.InputBox("Ingrese el nuevo nombre", "Nombre");
-        }
+
+
     }
 }

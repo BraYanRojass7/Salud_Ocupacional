@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.1.180\informes\SG-SST\Actualizaciones\</UpdateUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -172,6 +172,12 @@
   <ItemGroup>
     <Content Include="Logo.ico" />
     <Content Include="Resources\1.txt" />
+    <None Include="Resources\boton ROJO EDITAR.png" />
+    <None Include="Resources\boton VERDE EDITAR.png" />
+    <None Include="Resources\GUARDAR.png" />
+    <None Include="Resources\EDITAR.png" />
+    <None Include="Resources\SOPORTE.png" />
+    <None Include="Resources\rect.png" />
     <None Include="Resources\BOTON INSPECCIONAR1.png" />
     <None Include="Resources\SALIR BOTON1.png" />
     <None Include="Resources\INGRESAR BOTON.png" />

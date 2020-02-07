@@ -43,10 +43,12 @@
             this.pic_logo_gu = new System.Windows.Forms.PictureBox();
             this.pic_Salir = new System.Windows.Forms.PictureBox();
             this.pic_Inspec = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo_gu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Inspec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_desc_est
@@ -214,6 +216,17 @@
             this.pic_Inspec.TabStop = false;
             this.pic_Inspec.Click += new System.EventHandler(this.pic_Inspec_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::App_SG_SST_V1_5.Properties.Resources.rect;
+            this.pictureBox1.Location = new System.Drawing.Point(518, 307);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(341, 139);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +235,7 @@
             this.BackgroundImage = global::App_SG_SST_V1_5.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 464);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pic_Inspec);
             this.Controls.Add(this.pic_Salir);
             this.Controls.Add(this.txt_desc_est);
@@ -245,6 +259,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo_gu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Inspec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +280,6 @@
         private System.Windows.Forms.PictureBox pic_logo_gu;
         private System.Windows.Forms.PictureBox pic_Salir;
         private System.Windows.Forms.PictureBox pic_Inspec;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

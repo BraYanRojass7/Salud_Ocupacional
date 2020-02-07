@@ -146,7 +146,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.BackColor = System.Drawing.Color.SlateGray;
+            this.txt_pass.BackColor = System.Drawing.Color.DodgerBlue;
             this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(15, 87);
@@ -160,7 +160,7 @@
             // 
             // txt_user
             // 
-            this.txt_user.BackColor = System.Drawing.Color.SlateGray;
+            this.txt_user.BackColor = System.Drawing.Color.DodgerBlue;
             this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_user.Location = new System.Drawing.Point(15, 36);

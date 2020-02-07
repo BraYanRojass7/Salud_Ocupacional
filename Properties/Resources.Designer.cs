@@ -153,6 +153,26 @@ namespace App_SG_SST_V1_5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_ROJO_EDITAR {
+            get {
+                object obj = ResourceManager.GetObject("boton ROJO EDITAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boton_VERDE_EDITAR {
+            get {
+                object obj = ResourceManager.GetObject("boton VERDE EDITAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap brn_Salir {
             get {
                 object obj = ResourceManager.GetObject("brn_Salir", resourceCulture);
@@ -193,6 +213,16 @@ namespace App_SG_SST_V1_5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EDITAR {
+            get {
+                object obj = ResourceManager.GetObject("EDITAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_3_6e08ccef1fcd {
             get {
                 object obj = ResourceManager.GetObject("ezgif-3-6e08ccef1fcd", resourceCulture);
@@ -206,6 +236,16 @@ namespace App_SG_SST_V1_5.Properties {
         internal static System.Drawing.Bitmap GU_Blanco {
             get {
                 object obj = ResourceManager.GetObject("GU_Blanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GUARDAR {
+            get {
+                object obj = ResourceManager.GetObject("GUARDAR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +303,16 @@ namespace App_SG_SST_V1_5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rect {
+            get {
+                object obj = ResourceManager.GetObject("rect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salir___1_ {
             get {
                 object obj = ResourceManager.GetObject("salir  (1)", resourceCulture);
@@ -296,6 +346,16 @@ namespace App_SG_SST_V1_5.Properties {
         internal static System.Drawing.Bitmap small_button_clip_art_clkerm_vector_clip_art_37 {
             get {
                 object obj = ResourceManager.GetObject("small-button-clip-art-clkerm-vector-clip-art-37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SOPORTE {
+            get {
+                object obj = ResourceManager.GetObject("SOPORTE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

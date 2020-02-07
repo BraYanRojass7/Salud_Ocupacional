@@ -47,16 +47,19 @@
             this.pnl_tit = new System.Windows.Forms.Panel();
             this.lbl_tit_1 = new System.Windows.Forms.Label();
             this.lbl_tit_2 = new System.Windows.Forms.Label();
-            this.btn_soport = new System.Windows.Forms.Button();
             this.pic_estado = new System.Windows.Forms.PictureBox();
-            this.btn_editar = new System.Windows.Forms.Button();
-            this.btn_guardar = new System.Windows.Forms.Button();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_fecha = new System.Windows.Forms.TextBox();
+            this.pic_soportes = new System.Windows.Forms.PictureBox();
+            this.pic_editar = new System.Windows.Forms.PictureBox();
+            this.pic_guardar = new System.Windows.Forms.PictureBox();
             this.pnl_cabecera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.pnl_tit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_estado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_soportes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_editar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_guardar)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_estado
@@ -278,17 +281,6 @@
             this.lbl_tit_2.TabIndex = 2;
             this.lbl_tit_2.Text = "SG-SST - 2019";
             // 
-            // btn_soport
-            // 
-            this.btn_soport.ForeColor = System.Drawing.Color.Black;
-            this.btn_soport.Location = new System.Drawing.Point(728, 131);
-            this.btn_soport.Name = "btn_soport";
-            this.btn_soport.Size = new System.Drawing.Size(75, 23);
-            this.btn_soport.TabIndex = 72;
-            this.btn_soport.Text = "Soportes";
-            this.btn_soport.UseVisualStyleBackColor = true;
-            this.btn_soport.Click += new System.EventHandler(this.btn_soport_Click);
-            // 
             // pic_estado
             // 
             this.pic_estado.BackColor = System.Drawing.Color.Transparent;
@@ -300,30 +292,6 @@
             this.pic_estado.TabIndex = 71;
             this.pic_estado.TabStop = false;
             this.pic_estado.Click += new System.EventHandler(this.pic_estado_Click);
-            // 
-            // btn_editar
-            // 
-            this.btn_editar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_editar.ForeColor = System.Drawing.Color.Black;
-            this.btn_editar.Location = new System.Drawing.Point(728, 156);
-            this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(75, 23);
-            this.btn_editar.TabIndex = 75;
-            this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = false;
-            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
-            // 
-            // btn_guardar
-            // 
-            this.btn_guardar.Enabled = false;
-            this.btn_guardar.ForeColor = System.Drawing.Color.Black;
-            this.btn_guardar.Location = new System.Drawing.Point(728, 180);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(75, 23);
-            this.btn_guardar.TabIndex = 76;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // txt_nombre
             // 
@@ -339,6 +307,42 @@
             this.txt_fecha.Size = new System.Drawing.Size(158, 20);
             this.txt_fecha.TabIndex = 78;
             // 
+            // pic_soportes
+            // 
+            this.pic_soportes.BackColor = System.Drawing.Color.Transparent;
+            this.pic_soportes.Image = global::App_SG_SST_V1_5.Properties.Resources.SOPORTE;
+            this.pic_soportes.Location = new System.Drawing.Point(728, 126);
+            this.pic_soportes.Name = "pic_soportes";
+            this.pic_soportes.Size = new System.Drawing.Size(75, 24);
+            this.pic_soportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_soportes.TabIndex = 80;
+            this.pic_soportes.TabStop = false;
+            this.pic_soportes.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pic_editar
+            // 
+            this.pic_editar.BackColor = System.Drawing.Color.Transparent;
+            this.pic_editar.Image = global::App_SG_SST_V1_5.Properties.Resources.EDITAR;
+            this.pic_editar.Location = new System.Drawing.Point(728, 154);
+            this.pic_editar.Name = "pic_editar";
+            this.pic_editar.Size = new System.Drawing.Size(75, 24);
+            this.pic_editar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_editar.TabIndex = 81;
+            this.pic_editar.TabStop = false;
+            this.pic_editar.Click += new System.EventHandler(this.pic_editar_Click);
+            // 
+            // pic_guardar
+            // 
+            this.pic_guardar.BackColor = System.Drawing.Color.Transparent;
+            this.pic_guardar.Image = global::App_SG_SST_V1_5.Properties.Resources.GUARDAR;
+            this.pic_guardar.Location = new System.Drawing.Point(728, 182);
+            this.pic_guardar.Name = "pic_guardar";
+            this.pic_guardar.Size = new System.Drawing.Size(75, 24);
+            this.pic_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_guardar.TabIndex = 82;
+            this.pic_guardar.TabStop = false;
+            this.pic_guardar.Click += new System.EventHandler(this.pic_guardar_Click);
+            // 
             // frm_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,11 +351,11 @@
             this.BackgroundImage = global::App_SG_SST_V1_5.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(837, 645);
+            this.Controls.Add(this.pic_guardar);
+            this.Controls.Add(this.pic_editar);
+            this.Controls.Add(this.pic_soportes);
             this.Controls.Add(this.txt_fecha);
             this.Controls.Add(this.txt_nombre);
-            this.Controls.Add(this.btn_guardar);
-            this.Controls.Add(this.btn_editar);
-            this.Controls.Add(this.btn_soport);
             this.Controls.Add(this.pic_estado);
             this.Controls.Add(this.lbl_estado);
             this.Controls.Add(this.lbl_fecha);
@@ -378,6 +382,9 @@
             this.pnl_tit.ResumeLayout(false);
             this.pnl_tit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_estado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_soportes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_editar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_guardar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,10 +411,10 @@
         private System.Windows.Forms.Panel pnl_tit;
         private System.Windows.Forms.Label lbl_tit_1;
         private System.Windows.Forms.Label lbl_tit_2;
-        private System.Windows.Forms.Button btn_soport;
-        public System.Windows.Forms.Button btn_editar;
-        public System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox txt_fecha;
+        private System.Windows.Forms.PictureBox pic_soportes;
+        private System.Windows.Forms.PictureBox pic_editar;
+        private System.Windows.Forms.PictureBox pic_guardar;
     }
 }
