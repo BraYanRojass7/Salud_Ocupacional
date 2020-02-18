@@ -18,7 +18,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
         Cls.Cls_Mysql sql = new Cls.Cls_Mysql();
 
         //--MOSTRAR TEXTOS-100%-//
-        private void cmb_marcolegal_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmb_itemest_SelectedIndexChanged(object sender, EventArgs e)
         {
             //--MOSTRAR TEXTO EN LOS CAMPOS--//
             estado_lectura(true, true, true, true, true, true);
@@ -478,5 +478,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                     break;
             }
         }
+
+        
     }
 }

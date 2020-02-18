@@ -226,7 +226,7 @@
             this.cmb_itemest.Name = "cmb_itemest";
             this.cmb_itemest.Size = new System.Drawing.Size(200, 21);
             this.cmb_itemest.TabIndex = 57;
-            this.cmb_itemest.SelectedIndexChanged += new System.EventHandler(this.cmb_marcolegal_SelectedIndexChanged);
+            this.cmb_itemest.SelectedIndexChanged += new System.EventHandler(this.cmb_itemest_SelectedIndexChanged);
             // 
             // lbl_marco_legal
             // 

@@ -129,7 +129,10 @@
             this.cmb_ciclo.FormattingEnabled = true;
             this.cmb_ciclo.Items.AddRange(new object[] {
             "Seleccionar",
-            "I. Planear"});
+            "I. Planear",
+            "II. Hacer",
+            "III. Verificar",
+            "IV. Actuar"});
             this.cmb_ciclo.Location = new System.Drawing.Point(185, 254);
             this.cmb_ciclo.Name = "cmb_ciclo";
             this.cmb_ciclo.Size = new System.Drawing.Size(121, 21);

@@ -40,7 +40,12 @@ namespace App_SG_SST_V1_5.Src.Frm
                     //--AGREGO DATOS--//
                     cmb_mod_est.Items.Add("Seleccionar");
                     cmb_mod_est.Items.Add("Recursos (10%)");
-                    //cmb_mod_est.Items.Add("Gestion integral SG-SST (15%)");
+                    cmb_mod_est.Items.Add("Gestion integral SG-SST (15%)");
+                    cmb_mod_est.Items.Add("Gestion de la salud (20%)");
+                    cmb_mod_est.Items.Add("Gestion de peligros y riesgos (30%)");
+                    cmb_mod_est.Items.Add("Gestion de amenazas (10%)");
+                    cmb_mod_est.Items.Add("Verificación del SG-SST (5%)");
+                    cmb_mod_est.Items.Add("Mejoramiento (10%)");
                     //--SELECCIONO EL PRIMER ITEM--//
                     cmb_mod_est.SelectedIndex = 0;
                     break;
@@ -72,7 +77,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                     //----//
                     cmb_est.Items.Add("Seleccionar");
                     cmb_est.Items.Add("1. Recursos Financieros...");
-                    //cmb_est.Items.Add("2. Capacitación en el Sistema...");
+                    cmb_est.Items.Add("2. Capacitación en el Sistema...");
                     //----//
                     cmb_est.SelectedIndex = 0;
                     break;
@@ -155,53 +160,6 @@ namespace App_SG_SST_V1_5.Src.Frm
             }
         }
 
-        //--ACCION AL PRESIONAR EL BOTON INSPECCIONAR--//
-        private void btn_inspec_Click(object sender, EventArgs e)
-        {
-            //----//
-            switch (cmb_est.SelectedItem)
-            {
-                case "Seleccionar":
-
-                    //----//
-                    MessageBox.Show("Debe seleccionar un estandar primero", "SELECCION", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-
-                case "1. Recursos Financieros...":
-
-                    //----//
-                    Plantilla.Frms.frm_1 FRMS = new Plantilla.Frms.frm_1();
-                    //----//
-                    FRMS.Show();
-                    //----//
-                    break;
-
-                case "2. Capacitación en el Sistema...":
-
-                    //----//
-                    //Plantilla.Frms.frm_2 FRMS2 = new Plantilla.Frms.frm_2();
-                    //----//
-                    //FRMS2.Show();
-                    //----//
-                    break;
-
-                case "4. Objetivos del Sistema...":
-
-                    //----//
-                    //Plantilla.Frms.frm_4 FRMS4 = new Plantilla.Frms.frm_4();
-                    //----//
-                    //FRMS4.Show();
-                    //----//
-                    break;
-
-                default:
-
-                    //----//
-                    MessageBox.Show("Debe seleccionar un estandar primero", "SELECCION", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-            }
-        }
-
         //--ACCION AL PRESIONAR EL BOTON SALIR--//
         private void btn_salir_Click(object sender, EventArgs e)
         {
@@ -229,54 +187,6 @@ namespace App_SG_SST_V1_5.Src.Frm
             //----//
             Application.Exit();
         }
-
-        //--ACCION AL PRESIONAR EL BOTON INSPECCIONAR--//
-        private void lbl_Inspec_Click(object sender, EventArgs e)
-        {
-            //----//
-            switch (cmb_est.SelectedItem)
-            {
-                case "Seleccionar":
-
-                    //----//
-                    MessageBox.Show("Debe seleccionar un estandar primero", "SELECCION", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-
-                case "1. Recursos Financieros...":
-
-                    //----//
-                    Plantilla.Frms.frm_1 FRMS = new Plantilla.Frms.frm_1();
-                    //----//
-                    FRMS.Show();
-                    //----//
-                    break;
-
-                case "2. Capacitación en el Sistema...":
-
-                    //----//
-                    //Plantilla.Frms.frm_2 FRMS2 = new Plantilla.Frms.frm_2();
-                    //----//
-                    //FRMS2.Show();
-                    //----//
-                    break;
-
-                case "4. Objetivos del Sistema...":
-
-                    //----//
-                    //Plantilla.Frms.frm_4 FRMS4 = new Plantilla.Frms.frm_4();
-                    //----//
-                    //FRMS4.Show();
-                    //----//
-                    break;
-
-                default:
-
-                    //----//
-                    MessageBox.Show("Debe seleccionar un estandar primero", "SELECCION", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-            }
-        }
-
         //--ACCION AL PRESIONAR EL BOTON INSPECCIONAR--//
         private void pic_Inspec_Click(object sender, EventArgs e)
         {
@@ -301,18 +211,9 @@ namespace App_SG_SST_V1_5.Src.Frm
                 case "2. Capacitación en el Sistema...":
 
                     //----//
-                    //Plantilla.Frms.frm_2 FRMS2 = new Plantilla.Frms.frm_2();
+                    Plantilla.Frms.frm2 FRMS2 = new Plantilla.Frms.frm2();
                     //----//
-                    //FRMS2.Show();
-                    //----//
-                    break;
-
-                case "4. Objetivos del Sistema...":
-
-                    //----//
-                    //Plantilla.Frms.frm_4 FRMS4 = new Plantilla.Frms.frm_4();
-                    //----//
-                    //FRMS4.Show();
+                    FRMS2.Show();
                     //----//
                     break;
 
