@@ -41,13 +41,57 @@ namespace App_SG_SST_V1_5.Src.Frm
                     cmb_mod_est.Items.Add("Seleccionar");
                     cmb_mod_est.Items.Add("Recursos (10%)");
                     cmb_mod_est.Items.Add("Gestion integral SG-SST (15%)");
-                    cmb_mod_est.Items.Add("Gestion de la salud (20%)");
-                    cmb_mod_est.Items.Add("Gestion de peligros y riesgos (30%)");
-                    cmb_mod_est.Items.Add("Gestion de amenazas (10%)");
+                    //--SELECCIONO EL PRIMER ITEM--//
+                    cmb_mod_est.SelectedIndex = 0;
+                    break;
+                case "II. Hacer":
+
+                    //--ACTIVO--//
+                    cmb_mod_est.Enabled = true;
+                    //--LIMPIO LOS CAMPOS--//
+                    cmb_mod_est.Items.Clear();
+                    //--AGREGO DATOS--//
+                    cmb_mod_est.Items.Add("Seleccionar");
+                    cmb_mod_est.Items.Add("Gestión de la Salud (20%)");
+                    cmb_mod_est.Items.Add("Gestión de peligros y riesgos (30%)");
+                    cmb_mod_est.Items.Add("Gestión de amenazas (10%)");
+                    //--SELECCIONO EL PRIMER ITEM--//
+                    cmb_mod_est.SelectedIndex = 0;
+                    break;
+                case "III. Verificar":
+
+                    //--ACTIVO--//
+                    cmb_mod_est.Enabled = true;
+                    //--LIMPIO LOS CAMPOS--//
+                    cmb_mod_est.Items.Clear();
+                    //--AGREGO DATOS--//
+                    cmb_mod_est.Items.Add("Seleccionar");
                     cmb_mod_est.Items.Add("Verificación del SG-SST (5%)");
+                    //--SELECCIONO EL PRIMER ITEM--//
+                    cmb_mod_est.SelectedIndex = 0;
+                    break;
+                case "IV. Actuar":
+
+                    //--ACTIVO--//
+                    cmb_mod_est.Enabled = true;
+                    //--LIMPIO LOS CAMPOS--//
+                    cmb_mod_est.Items.Clear();
+                    //--AGREGO DATOS--//
+                    cmb_mod_est.Items.Add("Seleccionar");
                     cmb_mod_est.Items.Add("Mejoramiento (10%)");
                     //--SELECCIONO EL PRIMER ITEM--//
                     cmb_mod_est.SelectedIndex = 0;
+                    break;
+
+                default:
+                    //----//
+                    cmb_mod_est.Enabled = false;
+                    cmb_est.Enabled = false;
+                    //----//
+                    cmb_est.Items.Clear();
+                    cmb_mod_est.Items.Clear();
+                    //----//
+                    txt_desc_est.Clear();
                     break;
 
             }
@@ -91,17 +135,85 @@ namespace App_SG_SST_V1_5.Src.Frm
                     //----//
                     cmb_est.Items.Add("Seleccionar");
                     cmb_est.Items.Add("4. Objetivos del Sistema...");
-                    cmb_est.Items.Add("5. ");
-                    cmb_est.Items.Add("6. ");
-                    cmb_est.Items.Add("7. ");
-                    cmb_est.Items.Add("8. ");
-                    cmb_est.Items.Add("9. ");
-                    cmb_est.Items.Add("10. ");
-                    cmb_est.Items.Add("11. ");
-                    cmb_est.Items.Add("12. ");
-                    cmb_est.Items.Add("13. ");
+                    cmb_est.Items.Add("5. Evaluación inicial ...");
+                    cmb_est.Items.Add("6. Conservación ...");
+                    cmb_est.Items.Add("8. Rendición de cuentas ...");
+                    cmb_est.Items.Add("9. Normatividadnacional ...");
+                    cmb_est.Items.Add("10. Comunicación ...");
+                    cmb_est.Items.Add("11. Adquisiciones ...");
+                    cmb_est.Items.Add("12. Contratación ...");
+                    cmb_est.Items.Add("13. Gestión ...");
                     //----//
                     cmb_est.SelectedIndex = 0;
+                    break;
+                case "Gestión de la Salud (20%)":
+
+                    //----//
+                    cmb_est.Enabled = true;
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Items.Add("Seleccionar");
+                    cmb_est.Items.Add("14. Condiciones ...");
+                    cmb_est.Items.Add("15. Registro ...");
+                    cmb_est.Items.Add("16. Mecanismos ...");
+                    //----//
+                    cmb_est.SelectedIndex = 0;
+                    break;
+                case "Gestión de peligros y riesgos (30%)":
+
+                    //----//
+                    cmb_est.Enabled = true;
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Items.Add("Seleccionar");
+                    cmb_est.Items.Add("17. Identificación ...");
+                    cmb_est.Items.Add("18. Medidas ...");
+                    //----//
+                    cmb_est.SelectedIndex = 0;
+                    break;
+                case "Gestión de amenazas (10%)":
+
+                    //----//
+                    cmb_est.Enabled = true;
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Items.Add("Seleccionar");
+                    cmb_est.Items.Add("19. Plan de prevención ...");
+                    //----//
+                    cmb_est.SelectedIndex = 0;
+                    break;
+                case "Verificación del SG-SST (5%)":
+
+                    //----//
+                    cmb_est.Enabled = true;
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Items.Add("Seleccionar");
+                    cmb_est.Items.Add("20. Gestión y resultado ...");
+                    //----//
+                    cmb_est.SelectedIndex = 0;
+                    break;
+                case "Mejoramiento (10%)":
+
+                    //----//
+                    cmb_est.Enabled = true;
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Items.Add("Seleccionar");
+                    cmb_est.Items.Add("21. Acciones ...");
+                    //----//
+                    cmb_est.SelectedIndex = 0;
+                    break;
+                default:
+                    //----//
+                    cmb_est.Items.Clear();
+                    //----//
+                    cmb_est.Enabled = false;
                     break;
             }
         }
