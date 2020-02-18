@@ -100,11 +100,11 @@
             // pnl_texts
             // 
             this.pnl_texts.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_texts.Controls.Add(this.txt_user);
             this.pnl_texts.Controls.Add(this.chk_reco_contra);
             this.pnl_texts.Controls.Add(this.lbl_pass);
             this.pnl_texts.Controls.Add(this.lbl_user);
             this.pnl_texts.Controls.Add(this.txt_pass);
-            this.pnl_texts.Controls.Add(this.txt_user);
             this.pnl_texts.Location = new System.Drawing.Point(36, 149);
             this.pnl_texts.Name = "pnl_texts";
             this.pnl_texts.Size = new System.Drawing.Size(183, 147);
@@ -146,7 +146,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txt_pass.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(15, 87);
@@ -160,10 +160,10 @@
             // 
             // txt_user
             // 
-            this.txt_user.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txt_user.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_user.Location = new System.Drawing.Point(15, 36);
+            this.txt_user.Location = new System.Drawing.Point(16, 38);
             this.txt_user.MaxLength = 15;
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(154, 17);

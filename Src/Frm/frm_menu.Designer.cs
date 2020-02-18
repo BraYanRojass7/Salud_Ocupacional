@@ -43,22 +43,24 @@
             this.pic_logo_gu = new System.Windows.Forms.PictureBox();
             this.pic_Salir = new System.Windows.Forms.PictureBox();
             this.pic_Inspec = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_desc = new System.Windows.Forms.PictureBox();
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo_gu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Inspec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_desc)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_desc_est
             // 
+            this.txt_desc_est.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_desc_est.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_desc_est.Cursor = System.Windows.Forms.Cursors.No;
-            this.txt_desc_est.Location = new System.Drawing.Point(518, 307);
+            this.txt_desc_est.Location = new System.Drawing.Point(524, 319);
             this.txt_desc_est.Multiline = true;
             this.txt_desc_est.Name = "txt_desc_est";
             this.txt_desc_est.ReadOnly = true;
-            this.txt_desc_est.Size = new System.Drawing.Size(341, 138);
+            this.txt_desc_est.Size = new System.Drawing.Size(335, 113);
             this.txt_desc_est.TabIndex = 32;
             this.txt_desc_est.TabStop = false;
             // 
@@ -68,7 +70,7 @@
             this.lbl_desc_est.BackColor = System.Drawing.Color.Transparent;
             this.lbl_desc_est.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_desc_est.ForeColor = System.Drawing.Color.White;
-            this.lbl_desc_est.Location = new System.Drawing.Point(513, 278);
+            this.lbl_desc_est.Location = new System.Drawing.Point(517, 278);
             this.lbl_desc_est.Name = "lbl_desc_est";
             this.lbl_desc_est.Size = new System.Drawing.Size(346, 25);
             this.lbl_desc_est.TabIndex = 31;
@@ -91,7 +93,7 @@
             this.lbl_est.BackColor = System.Drawing.Color.Transparent;
             this.lbl_est.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_est.ForeColor = System.Drawing.Color.White;
-            this.lbl_est.Location = new System.Drawing.Point(599, 226);
+            this.lbl_est.Location = new System.Drawing.Point(604, 226);
             this.lbl_est.Name = "lbl_est";
             this.lbl_est.Size = new System.Drawing.Size(164, 25);
             this.lbl_est.TabIndex = 29;
@@ -128,7 +130,7 @@
             this.cmb_ciclo.Items.AddRange(new object[] {
             "Seleccionar",
             "I. Planear"});
-            this.cmb_ciclo.Location = new System.Drawing.Point(179, 254);
+            this.cmb_ciclo.Location = new System.Drawing.Point(185, 254);
             this.cmb_ciclo.Name = "cmb_ciclo";
             this.cmb_ciclo.Size = new System.Drawing.Size(121, 21);
             this.cmb_ciclo.TabIndex = 26;
@@ -140,7 +142,7 @@
             this.lbl_ciclo.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ciclo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ciclo.ForeColor = System.Drawing.Color.White;
-            this.lbl_ciclo.Location = new System.Drawing.Point(199, 226);
+            this.lbl_ciclo.Location = new System.Drawing.Point(205, 226);
             this.lbl_ciclo.Name = "lbl_ciclo";
             this.lbl_ciclo.Size = new System.Drawing.Size(80, 25);
             this.lbl_ciclo.TabIndex = 25;
@@ -196,7 +198,7 @@
             // 
             this.pic_Salir.BackColor = System.Drawing.Color.Transparent;
             this.pic_Salir.Image = global::App_SG_SST_V1_5.Properties.Resources.SALIR_BOTON1;
-            this.pic_Salir.Location = new System.Drawing.Point(124, 382);
+            this.pic_Salir.Location = new System.Drawing.Point(135, 380);
             this.pic_Salir.Name = "pic_Salir";
             this.pic_Salir.Size = new System.Drawing.Size(100, 34);
             this.pic_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +210,7 @@
             // 
             this.pic_Inspec.BackColor = System.Drawing.Color.Transparent;
             this.pic_Inspec.Image = global::App_SG_SST_V1_5.Properties.Resources.BOTON_INSPECCIONAR1;
-            this.pic_Inspec.Location = new System.Drawing.Point(230, 377);
+            this.pic_Inspec.Location = new System.Drawing.Point(241, 375);
             this.pic_Inspec.Name = "pic_Inspec";
             this.pic_Inspec.Size = new System.Drawing.Size(116, 43);
             this.pic_Inspec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,16 +218,16 @@
             this.pic_Inspec.TabStop = false;
             this.pic_Inspec.Click += new System.EventHandler(this.pic_Inspec_Click);
             // 
-            // pictureBox1
+            // pic_desc
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::App_SG_SST_V1_5.Properties.Resources.rect;
-            this.pictureBox1.Location = new System.Drawing.Point(518, 307);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 139);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
+            this.pic_desc.BackColor = System.Drawing.Color.Transparent;
+            this.pic_desc.Image = global::App_SG_SST_V1_5.Properties.Resources._001;
+            this.pic_desc.Location = new System.Drawing.Point(518, 304);
+            this.pic_desc.Name = "pic_desc";
+            this.pic_desc.Size = new System.Drawing.Size(342, 139);
+            this.pic_desc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_desc.TabIndex = 39;
+            this.pic_desc.TabStop = false;
             // 
             // frm_menu
             // 
@@ -235,10 +237,10 @@
             this.BackgroundImage = global::App_SG_SST_V1_5.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 464);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txt_desc_est);
+            this.Controls.Add(this.pic_desc);
             this.Controls.Add(this.pic_Inspec);
             this.Controls.Add(this.pic_Salir);
-            this.Controls.Add(this.txt_desc_est);
             this.Controls.Add(this.lbl_desc_est);
             this.Controls.Add(this.cmb_est);
             this.Controls.Add(this.lbl_est);
@@ -259,7 +261,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo_gu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Inspec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_desc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +282,6 @@
         private System.Windows.Forms.PictureBox pic_logo_gu;
         private System.Windows.Forms.PictureBox pic_Salir;
         private System.Windows.Forms.PictureBox pic_Inspec;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_desc;
     }
 }

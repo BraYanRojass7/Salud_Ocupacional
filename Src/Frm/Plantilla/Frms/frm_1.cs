@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
+﻿using System;
 using System.Windows.Forms;
 
 namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
@@ -10,52 +6,55 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
     public partial class frm_1 : Form
     {
 
+
         public frm_1()
         {
             InitializeComponent();
             cmb_itemest.SelectedIndex = 0;
-            
-
         }
 
         //--OBJETO PARA INTERACTUAR CON LA CLASE--//
         Cls.Cls_Frms clase = new Cls.Cls_Frms();
+        Cls.Cls_Mysql sql = new Cls.Cls_Mysql();
+
         //--MOSTRAR TEXTOS-100%-//
         private void cmb_marcolegal_SelectedIndexChanged(object sender, EventArgs e)
         {
             //--MOSTRAR TEXTO EN LOS CAMPOS--//
-            estado_lectura(true, true, true, true,true,true);
+            estado_lectura(true, true, true, true, true, true);
             cursor();
             switch (cmb_itemest.SelectedItem)
             {
 
                 case "Seleccionar":
                     //--ESTADO DE LOS CAMPOS--//
-                    txt_estados(false, false, false,false,false,false);
+                    txt_estados(false, false, false, false, false, false);
                     //--LIMPIAR LOS CAMPOS DE TEXTO--//
-                    limpiar();                    
+                    limpiar();
                     //--IMAGEN QUE SE MUESTRA--//
+                    clase.leer("Select avance_est FROM tb_item_estandar");
+                    txt_avance.Text = clase.avance;
                     pic_estado.Image = Properties.Resources.help_question;
                     //--COLOR DE LOS BOTONES (RGB)--//
-                    color_pic("a","a");
+                    color_pic("a", "a");
                     //--TIPO DE CURSOR EN LOS CAMPOS--//
                     break;
 
                 case "1.1.3 Asignacion ...":
                     //--COLORES DE LOS BOTONES--//
-                    color_pic("v","r");
+                    color_pic("v", "r");
                     //--ESTADO DE LOS CAMPOS--//
-                    txt_estados(true,true,true,true,true,false);
+                    txt_estados(true, true, true, true, true, false);
                     //--RUTAS DE LOS TEXTOS--//
-                    string descripcion = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Descripción_Item.txt"; 
-                    String avance = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Avance.txt"; 
-                    String Observaciones = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Observaciones.txt"; 
-                    String Marco = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Marco_legal.txt"; 
-                    String nombre = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Nombre.txt"; 
+                    string descripcion = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Descripción_Item.txt";
+                    String avance = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Avance.txt";
+                    String Observaciones = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Observaciones.txt";
+                    String Marco = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Marco_legal.txt";
+                    String nombre = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Nombre.txt";
                     String fecha = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Fecha.txt";
                     String estado = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.3Asignación\Estado.txt";
                     //--OBTENER Y MOSTRAR LOS TEXTOS--//
-                    clase.leer_txt(descripcion,avance,Observaciones,Marco,nombre,fecha,estado);
+                    clase.leer_txt(descripcion, avance, Observaciones, Marco, nombre, fecha, estado);
                     mostrar_txt();
                     //----//
                     break;
@@ -187,11 +186,10 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                         break;
                 }
             }
-                        
+
         }
 
         //-------------------------METODOS----------------------------------//
-
 
         //--ACTIVAR O DESACTIVAR CAMPOS--//
         public void txt_estados(Boolean avance, Boolean desc, Boolean marco, Boolean observa, Boolean editar, Boolean guardar)
@@ -205,31 +203,34 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             pic_guardar.Enabled = guardar;
         }
         //--MOSTRAR CAMPOS--//
-        void mostrar_txt() {
+        void mostrar_txt()
+        {
 
             //--DESCRIPCION--//
-                txt_desc.Text = clase.d;
+            txt_desc.Text = clase.d;
             //--AVANCE--//
-                txt_avance.Text = clase.a;
+            txt_avance.Text = clase.a;
             //--OBSERVACION--//       
-                txt_observa.Text = clase.o;
+            txt_observa.Text = clase.o;
             //--MARCO--//      
-                txt_marco.Text = clase.m;
+            txt_marco.Text = clase.m;
             //--Nombre--//           
-                txt_nombre.Text = clase.n;
+            txt_nombre.Text = clase.n;
             //--Fecha--//
-                txt_fecha.Text = clase.f;
+            txt_fecha.Text = clase.f;
             //--Estado--// 
-                if (clase.e.Equals("ACTIVO"))
-                {
-                    pic_estado.Image = Properties.Resources._checked;
-                }
-                else {
-                    pic_estado.Image = Properties.Resources.cancel;
-                }
+            if (clase.e.Equals("ACTIVO"))
+            {
+                pic_estado.Image = Properties.Resources._checked;
+            }
+            else
+            {
+                pic_estado.Image = Properties.Resources.cancel;
+            }
         }
         //--EDITAR--//
-        void Editar() {
+        void Editar()
+        {
             //--ESTADO DE LOS BOTONES EDITAR Y GUARDAR--//
             pic_editar.Enabled = false;
             pic_guardar.Enabled = true;
@@ -251,14 +252,15 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_fecha.Cursor = Cursors.IBeam;
         }
         //--GUARDAR--//
-        void Guardar() {
+        void Guardar()
+        {
             //--ESTADO DE LOS BOTONES EDITAR Y GUARDAR--//
             pic_editar.Enabled = true;
             pic_guardar.Enabled = false;
             //--COLOR DE LOS BOTONES EDITAR Y GUARDAR--//
             color_pic("v", "r");
             //--ESTADO (EDITABLE O NO) DE LOS CAMPOS DE TEXTO--//
-            estado_lectura(true,true,true,true,true,true);
+            estado_lectura(true, true, true, true, true, true);
             //--TIPO DE CURSOR DE LOS CAMPOS--//
             cursor();
             //--VARIABLES PARA LAS RUTAS--//
@@ -268,9 +270,10 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             String marco = "";
             String nombre = "";
             String fecha = "";
-            String texto1, texto2, texto3, texto4,texto5,texto6;
+            String texto1, texto2, texto3, texto4, texto5, texto6;
             //--RUTA DEL ARCHIVO DEPENDIENDO DEL ELEMENTO SELECCIONADO--//
-            switch (cmb_itemest.SelectedItem) {
+            switch (cmb_itemest.SelectedItem)
+            {
 
                 case "1.1.3 Asignacion ...":
 
@@ -297,7 +300,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                     observa = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Observaciones.txt";
                     marco = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Marco_legal.txt";
                     nombre = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Nombre.txt";
-                    fecha = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Fecha.txt"; 
+                    fecha = @"\\192.168.1.180\informes\TIC'S\Src\Ciclo\Recursos(10%)\1.Recursos\1.1.5Pago\Fecha.txt";
                     texto1 = txt_desc.Text;
                     texto2 = txt_avance.Text;
                     texto3 = txt_observa.Text;
@@ -358,10 +361,11 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                     texto6 = txt_fecha.Text;
                     clase.guardar(desc, avan, observa, marco, fecha, nombre, texto1, texto2, texto3, texto4, texto5, texto6);
                     break;
-            }      
-        }  
+            }
+        }
         //--LIMPIAR CAMPOS--//
-        void limpiar() {
+        void limpiar()
+        {
             txt_desc.Clear();
             txt_avance.Clear();
             txt_observa.Clear();
@@ -371,7 +375,7 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_fecha.Text = "--/--/----";
         }
         //--ESTADOS (SOLO LECTURAO O EDITABLE)--//
-        public void estado_lectura(Boolean avan, Boolean desc, Boolean marco, Boolean observa,Boolean nombre,Boolean fecha)
+        public void estado_lectura(Boolean avan, Boolean desc, Boolean marco, Boolean observa, Boolean nombre, Boolean fecha)
         {
             txt_avance.ReadOnly = avan;
             txt_desc.ReadOnly = desc;
@@ -381,7 +385,8 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_fecha.ReadOnly = fecha;
         }
         //--TIPOS DE CURSORES--//
-        public void cursor_no() {
+        public void cursor_no()
+        {
             txt_avance.Cursor = Cursors.No;
             txt_desc.Cursor = Cursors.No;
             txt_marco.Cursor = Cursors.No;
@@ -389,7 +394,8 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_nombre.Cursor = Cursors.No;
             txt_fecha.Cursor = Cursors.No;
         }
-        public void cursor_editar() {
+        public void cursor_editar()
+        {
             txt_avance.Cursor = Cursors.IBeam;
             txt_desc.Cursor = Cursors.IBeam;
             txt_marco.Cursor = Cursors.IBeam;
@@ -398,44 +404,51 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
             txt_fecha.Cursor = Cursors.IBeam;
         }
         //--ASIGNACION DE LOS CURSORES DEPENDIENDO DEL ESTADO DEL CAMPO DE TEXTO--//
-        public void cursor() {
-            if (txt_avance.ReadOnly==true&&txt_desc.ReadOnly==true&&txt_marco.ReadOnly==true&&txt_observa.ReadOnly==true&&txt_nombre.ReadOnly==true&&txt_fecha.ReadOnly==true) {
+        public void cursor()
+        {
+            if (txt_avance.ReadOnly == true && txt_desc.ReadOnly == true && txt_marco.ReadOnly == true && txt_observa.ReadOnly == true && txt_nombre.ReadOnly == true && txt_fecha.ReadOnly == true)
+            {
                 cursor_no();
             }
-            else {
-                cursor_editar();   
+            else
+            {
+                cursor_editar();
             }
         }
         //--COLOR DE LOS BOTONES--//
-        public void color_pic(String editar,String guardar) {
-            
-            switch (editar) {
-                case"r":
-                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar_r.png");
+        public void color_pic(String editar, String guardar)
+        {
+
+            switch (editar)
+            {
+                case "r":
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\editar_r.png");
                     break;
                 case "v":
-                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar_v.png");
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\editar_v.png");
                     break;
                 default:
-                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\editar.png");
+                    pic_editar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\editar.png");
                     break;
             }
-            switch (guardar) {
-                case"r":
-                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar_r.png");
+            switch (guardar)
+            {
+                case "r":
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\guardar_r.png");
                     break;
                 case "v":
-                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar_v.png");
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\guardar_v.png");
                     break;
                 default:
-                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\guardar.png");
+                    pic_guardar.Image = System.Drawing.Image.FromFile(@"\\192.168.1.180\informes\TIC'S\Src\imgs\guardar.png");
                     break;
             }
-            
+
 
         }
         //--SOPORTES--//
-        public void soportes() {
+        public void soportes()
+        {
             String ruta;
             switch (cmb_itemest.SelectedItem)
             {
@@ -465,7 +478,5 @@ namespace App_SG_SST_V1_5.Src.Frm.Plantilla.Frms
                     break;
             }
         }
-
-
     }
 }

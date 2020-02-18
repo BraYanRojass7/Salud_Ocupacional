@@ -1,0 +1,12 @@
+INSERT INTO tb_ciclo (nom_ciclo,des_ciclo) VALUES ("1","I. Planear");
+
+INSERT INTO tb_estandar (mod_estandar,estandar,desc_estandar,id_ciclo_fk) VALUES (1,"Recursos (10%)","Recursos financieros, técnicos,humanos y de otra indole requeridos para coordinar y desarrollar el SG-SST (4%)",1); 
+
+INSERT INTO tb_users (nom_user,ape_user,info_user) VALUES ("Brian","Galvis","Administrador");
+
+INSERT INTO tb_login (usuario,contrasena,id_user_login_fk) VALUES ("admin",MD5('root'),2000);
+
+INSERT INTO tb_item_estandar (item_est,desc_item_est,observa_est,avance_est,marc_leg_est,fecha_est,id_responsable_fk,id_est_item_est_fk)
+VALUES ("1.1.3 Asiganción ...","1.1.3 Asiganción de recursos para el sistema de Gestión en Seguridad y Salud en el Trabajo SG-SST","Pendiente validar datos, y actualizar nuevas actividades","Se concluyo el presupuesto del SG-SST para el año 2019. Quedo montado de tal manera que para el año 2020 solo se debe considerar un  % de incremento concertado","PRUEBA","2019-09-25",2000,1000);
+
+UPDATE tb_item_estandar SET img_est=LOAD_FILE('C:\Brian Steven Galvis Rojas\Brian Steven Galvis Rojas\Programación\Proyectos\Salud Ocupacional\imagenes\checked.png'); 

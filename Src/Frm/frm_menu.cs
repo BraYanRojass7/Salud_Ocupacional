@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace App_SG_SST_V1_5.Src.Frm
 {
@@ -141,7 +141,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                     txt_desc_est.Enabled = true;
                     //----//
                     break;
-                
+
                 case "4. Objetivos del Sistema...":
 
                     //----//
@@ -175,7 +175,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                     FRMS.Show();
                     //----//
                     break;
-                
+
                 case "2. Capacitación en el Sistema...":
 
                     //----//
@@ -184,7 +184,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                     //FRMS2.Show();
                     //----//
                     break;
-                
+
                 case "4. Objetivos del Sistema...":
 
                     //----//
@@ -193,7 +193,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                     //FRMS4.Show();
                     //----//
                     break;
-                
+
                 default:
 
                     //----//
@@ -301,7 +301,7 @@ namespace App_SG_SST_V1_5.Src.Frm
                 case "2. Capacitación en el Sistema...":
 
                     //----//
-                   //Plantilla.Frms.frm_2 FRMS2 = new Plantilla.Frms.frm_2();
+                    //Plantilla.Frms.frm_2 FRMS2 = new Plantilla.Frms.frm_2();
                     //----//
                     //FRMS2.Show();
                     //----//
@@ -337,5 +337,5 @@ namespace App_SG_SST_V1_5.Src.Frm
         }
     }
 
-    
+
 }

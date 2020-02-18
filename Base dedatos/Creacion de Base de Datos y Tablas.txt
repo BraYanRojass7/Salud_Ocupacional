@@ -1,1 +1,62 @@
-CREATE
+CREATE DATABASE hseq;
+
+USE hseq;
+
+CREATE TABLE tb_ciclo (
+cod_ciclo INT AUTO_INCREMENT,
+nom_ciclo VARCHAR (30),
+des_ciclo VARCHAR (45),
+PRIMARY KEY (cod_ciclo)
+);
+
+CREATE TABLE tb_estandar (
+cod_estandar INT AUTO_INCREMENT,
+mod_estandar INT (3),
+estandar TEXT(255),
+desc_estandar TEXT(255),
+id_ciclo_fk INT,
+PRIMARY KEY (cod_estandar),
+FOREIGN KEY (id_ciclo_fk) REFERENCES tb_ciclo(cod_ciclo)
+);
+
+ALTER TABLE tb_estandar AUTO_INCREMENT = 1000;
+
+CREATE TABLE tb_users (
+id_user INT AUTO_INCREMENT,
+nom_user VARCHAR (30),
+ape_user VARCHAR (30),
+info_user TEXT (255),
+PRIMARY KEY (id_user)
+);
+
+ALTER TABLE tb_users AUTO_INCREMENT = 2000;
+
+CREATE TABLE tb_login (
+id_login INT AUTO_INCREMENT,
+usuario VARCHAR (45),
+contrasena VARCHAR (32),
+create_time TIMESTAMP,
+id_user_login_fk INT,
+PRIMARY KEY (id_login),
+FOREIGN KEY (id_user_login_fk) REFERENCES tb_users(id_user)
+);
+
+ALTER TABLE tb_login AUTO_INCREMENT = 3000;
+
+CREATE TABLE tb_item_estandar (
+cod_item_est INT AUTO_INCREMENT,
+item_est VARCHAR (45),
+desc_item_est TEXT (255),
+observa_est TEXT (255),
+avance_est TEXT (255),
+marc_leg_est TEXT (255),
+fecha_est DATE,
+img_est BLOB,
+id_responsable_fk INT,
+id_est_item_est_fk INT,
+PRIMARY KEY (cod_item_est),
+FOREIGN KEY (id_responsable_fk) REFERENCES tb_users(id_user),
+FOREIGN KEY (id_est_item_est_fk) REFERENCES tb_estandar(cod_estandar)
+);
+
+ALTER TABLE tb_item_estandar AUTO_INCREMENT = 4000; 

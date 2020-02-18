@@ -53,6 +53,10 @@
             this.pic_soportes = new System.Windows.Forms.PictureBox();
             this.pic_editar = new System.Windows.Forms.PictureBox();
             this.pic_guardar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnl_cabecera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.pnl_tit.SuspendLayout();
@@ -60,6 +64,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_soportes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_editar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_guardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_estado
@@ -100,15 +108,17 @@
             // 
             // txt_marco
             // 
+            this.txt_marco.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_marco.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_marco.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_marco.Enabled = false;
             this.txt_marco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_marco.Location = new System.Drawing.Point(419, 449);
+            this.txt_marco.Location = new System.Drawing.Point(421, 470);
             this.txt_marco.Multiline = true;
             this.txt_marco.Name = "txt_marco";
             this.txt_marco.ReadOnly = true;
             this.txt_marco.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_marco.Size = new System.Drawing.Size(406, 190);
+            this.txt_marco.Size = new System.Drawing.Size(396, 158);
             this.txt_marco.TabIndex = 65;
             // 
             // lbl_marcLeg
@@ -117,7 +127,7 @@
             this.lbl_marcLeg.BackColor = System.Drawing.Color.Transparent;
             this.lbl_marcLeg.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_marcLeg.ForeColor = System.Drawing.Color.White;
-            this.lbl_marcLeg.Location = new System.Drawing.Point(415, 426);
+            this.lbl_marcLeg.Location = new System.Drawing.Point(553, 426);
             this.lbl_marcLeg.Name = "lbl_marcLeg";
             this.lbl_marcLeg.Size = new System.Drawing.Size(122, 21);
             this.lbl_marcLeg.TabIndex = 64;
@@ -125,15 +135,16 @@
             // 
             // txt_observa
             // 
+            this.txt_observa.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_observa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_observa.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_observa.Enabled = false;
             this.txt_observa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_observa.Location = new System.Drawing.Point(13, 449);
+            this.txt_observa.Location = new System.Drawing.Point(14, 467);
             this.txt_observa.Multiline = true;
             this.txt_observa.Name = "txt_observa";
             this.txt_observa.ReadOnly = true;
-            this.txt_observa.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_observa.Size = new System.Drawing.Size(400, 190);
+            this.txt_observa.Size = new System.Drawing.Size(399, 166);
             this.txt_observa.TabIndex = 63;
             // 
             // lbl_observa
@@ -142,7 +153,7 @@
             this.lbl_observa.BackColor = System.Drawing.Color.Transparent;
             this.lbl_observa.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_observa.ForeColor = System.Drawing.Color.White;
-            this.lbl_observa.Location = new System.Drawing.Point(9, 426);
+            this.lbl_observa.Location = new System.Drawing.Point(151, 425);
             this.lbl_observa.Name = "lbl_observa";
             this.lbl_observa.Size = new System.Drawing.Size(141, 21);
             this.lbl_observa.TabIndex = 62;
@@ -150,15 +161,16 @@
             // 
             // txt_avance
             // 
+            this.txt_avance.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_avance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_avance.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_avance.Enabled = false;
             this.txt_avance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_avance.Location = new System.Drawing.Point(419, 213);
+            this.txt_avance.Location = new System.Drawing.Point(421, 234);
             this.txt_avance.Multiline = true;
             this.txt_avance.Name = "txt_avance";
             this.txt_avance.ReadOnly = true;
-            this.txt_avance.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_avance.Size = new System.Drawing.Size(406, 200);
+            this.txt_avance.Size = new System.Drawing.Size(396, 166);
             this.txt_avance.TabIndex = 61;
             // 
             // lbl_avance
@@ -167,7 +179,7 @@
             this.lbl_avance.BackColor = System.Drawing.Color.Transparent;
             this.lbl_avance.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_avance.ForeColor = System.Drawing.Color.White;
-            this.lbl_avance.Location = new System.Drawing.Point(415, 190);
+            this.lbl_avance.Location = new System.Drawing.Point(553, 190);
             this.lbl_avance.Name = "lbl_avance";
             this.lbl_avance.Size = new System.Drawing.Size(73, 21);
             this.lbl_avance.TabIndex = 60;
@@ -175,15 +187,16 @@
             // 
             // txt_desc
             // 
+            this.txt_desc.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_desc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_desc.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_desc.Enabled = false;
             this.txt_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_desc.Location = new System.Drawing.Point(13, 213);
+            this.txt_desc.Location = new System.Drawing.Point(19, 234);
             this.txt_desc.Multiline = true;
             this.txt_desc.Name = "txt_desc";
             this.txt_desc.ReadOnly = true;
-            this.txt_desc.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_desc.Size = new System.Drawing.Size(400, 200);
+            this.txt_desc.Size = new System.Drawing.Size(391, 166);
             this.txt_desc.TabIndex = 59;
             // 
             // lbl_desc
@@ -192,7 +205,7 @@
             this.lbl_desc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_desc.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_desc.ForeColor = System.Drawing.Color.White;
-            this.lbl_desc.Location = new System.Drawing.Point(9, 190);
+            this.lbl_desc.Location = new System.Drawing.Point(155, 190);
             this.lbl_desc.Name = "lbl_desc";
             this.lbl_desc.Size = new System.Drawing.Size(115, 21);
             this.lbl_desc.TabIndex = 58;
@@ -343,6 +356,50 @@
             this.pic_guardar.TabStop = false;
             this.pic_guardar.Click += new System.EventHandler(this.pic_guardar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::App_SG_SST_V1_5.Properties.Resources._001;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 215);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(400, 199);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::App_SG_SST_V1_5.Properties.Resources._001;
+            this.pictureBox2.Location = new System.Drawing.Point(419, 215);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(400, 199);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 84;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::App_SG_SST_V1_5.Properties.Resources._001;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 449);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(400, 199);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 85;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::App_SG_SST_V1_5.Properties.Resources._001;
+            this.pictureBox4.Location = new System.Drawing.Point(419, 450);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(400, 199);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 86;
+            this.pictureBox4.TabStop = false;
+            // 
             // frm_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,6 +408,14 @@
             this.BackgroundImage = global::App_SG_SST_V1_5.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(837, 645);
+            this.Controls.Add(this.txt_marco);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.txt_observa);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.txt_avance);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.txt_desc);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pic_guardar);
             this.Controls.Add(this.pic_editar);
             this.Controls.Add(this.pic_soportes);
@@ -360,13 +425,9 @@
             this.Controls.Add(this.lbl_estado);
             this.Controls.Add(this.lbl_fecha);
             this.Controls.Add(this.lbl_respo);
-            this.Controls.Add(this.txt_marco);
             this.Controls.Add(this.lbl_marcLeg);
-            this.Controls.Add(this.txt_observa);
             this.Controls.Add(this.lbl_observa);
-            this.Controls.Add(this.txt_avance);
             this.Controls.Add(this.lbl_avance);
-            this.Controls.Add(this.txt_desc);
             this.Controls.Add(this.lbl_desc);
             this.Controls.Add(this.cmb_itemest);
             this.Controls.Add(this.lbl_marco_legal);
@@ -385,6 +446,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_soportes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_editar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_guardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +481,9 @@
         private System.Windows.Forms.PictureBox pic_soportes;
         private System.Windows.Forms.PictureBox pic_editar;
         private System.Windows.Forms.PictureBox pic_guardar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
