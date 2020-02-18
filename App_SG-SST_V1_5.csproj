@@ -123,11 +123,113 @@
     <Compile Include="Src\Frm\frm_menu.Designer.cs">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm10.Designer.cs">
+      <DependentUpon>frm10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm11.Designer.cs">
+      <DependentUpon>frm11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm12.Designer.cs">
+      <DependentUpon>frm12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm13.Designer.cs">
+      <DependentUpon>frm13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm14.Designer.cs">
+      <DependentUpon>frm14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm15.Designer.cs">
+      <DependentUpon>frm15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm16.Designer.cs">
+      <DependentUpon>frm16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm17.Designer.cs">
+      <DependentUpon>frm17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm18.Designer.cs">
+      <DependentUpon>frm18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm19.Designer.cs">
+      <DependentUpon>frm19.cs</DependentUpon>
+    </Compile>
     <Compile Include="Src\Frm\Plantilla\Frms\frm2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Src\Frm\Plantilla\Frms\frm2.Designer.cs">
       <DependentUpon>frm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm20.Designer.cs">
+      <DependentUpon>frm20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm21.Designer.cs">
+      <DependentUpon>frm21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm4.Designer.cs">
+      <DependentUpon>frm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm5.Designer.cs">
+      <DependentUpon>frm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm7.Designer.cs">
+      <DependentUpon>frm7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm8.Designer.cs">
+      <DependentUpon>frm8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Frm\Plantilla\Frms\frm9.Designer.cs">
+      <DependentUpon>frm9.cs</DependentUpon>
     </Compile>
     <Compile Include="Src\Frm\Plantilla\Plantilla.cs">
       <SubType>Form</SubType>
